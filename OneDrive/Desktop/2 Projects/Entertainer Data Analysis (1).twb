@@ -1,0 +1,2257 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0515.0324                               -->
+<workbook original-version='18.1' source-build='2024.1.3 (20241.24.0515.0324)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='EntertainerDataAnalysis_17175224600570' path='/workbooks' revision='1.5' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (Entertainer - Basic Info)' inline='true' name='federated.056i81216eq4cg103jggh0t4tuzc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Main Entertainer file' name='excel-direct.17zble11yie8hu19rpmhj0boe6i4'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hrida/Downloads/Unified assignments/2 Projects/Entertainer Data Analysis/Main Entertainer file.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Entertainer - Last work Info' name='excel-direct.14y7a5r1rkhchv141jsag143d65d'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hrida/Downloads/Unified assignments/2 Projects/Entertainer Data Analysis/Entertainer - Last work Info.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Entertainer - Basic Info' name='excel-direct.1l89o8z0d2uht013cxlq71d7s9k8'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hrida/Downloads/Unified assignments/2 Projects/Entertainer Data Analysis/Entertainer - Basic Info.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Entertainer - Breakthrough Info' name='excel-direct.0qep6zd1fxf7nn18g8nex1ocqrxn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hrida/Downloads/Unified assignments/2 Projects/Entertainer Data Analysis/Entertainer - Breakthrough Info.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qep6zd1fxf7nn18g8nex1ocqrxn' name='Sheet12' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D65:no:A1:D65:0' header='yes' outcome='2'>
+            <column datatype='string' name='Entertainer' ordinal='0' />
+            <column datatype='integer' name='Year of Breakthrough/#1 Hit/Award Nomination' ordinal='1' />
+            <column datatype='string' name='Breakthrough Name' ordinal='2' />
+            <column datatype='integer' name='Year of First Oscar/Grammy/Emmy' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.17zble11yie8hu19rpmhj0boe6i4' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:H71:no:A1:H71:0' header='yes' outcome='2'>
+              <column datatype='string' name='Entertainer' ordinal='0' />
+              <column datatype='string' name='Gender (traditional)' ordinal='1' />
+              <column datatype='integer' name='Birth Year' ordinal='2' />
+              <column datatype='integer' name='Year of Breakthrough/#1 Hit/Award Nomination' ordinal='3' />
+              <column datatype='string' name='Breakthrough Name' ordinal='4' />
+              <column datatype='integer' name='Year of First Oscar/Grammy/Emmy' ordinal='5' />
+              <column datatype='integer' name='Year of Last Major Work (arguable)' ordinal='6' />
+              <column datatype='integer' name='Year of Death' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1l89o8z0d2uht013cxlq71d7s9k8' name='Sheet11' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:C71:no:A1:C71:0' header='yes' outcome='6'>
+              <column datatype='string' name='Entertainer' ordinal='0' />
+              <column datatype='string' name='Gender (traditional)' ordinal='1' />
+              <column datatype='integer' name='Birth Year' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0qep6zd1fxf7nn18g8nex1ocqrxn' name='Sheet12' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:D65:no:A1:D65:0' header='yes' outcome='2'>
+              <column datatype='string' name='Entertainer' ordinal='0' />
+              <column datatype='integer' name='Year of Breakthrough/#1 Hit/Award Nomination' ordinal='1' />
+              <column datatype='string' name='Breakthrough Name' ordinal='2' />
+              <column datatype='integer' name='Year of First Oscar/Grammy/Emmy' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.14y7a5r1rkhchv141jsag143d65d' name='Sheet13' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:C71:no:A1:C71:0' header='yes' outcome='2'>
+              <column datatype='string' name='Entertainer' ordinal='0' />
+              <column datatype='integer' name='Year of Last Major Work (arguable)' ordinal='1' />
+              <column datatype='integer' name='Year of Death' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Birth Year (Sheet11)]' value='[Sheet11].[Birth Year]' />
+          <map key='[Birth Year]' value='[Sheet1].[Birth Year]' />
+          <map key='[Breakthrough Name (Sheet12)]' value='[Sheet12].[Breakthrough Name]' />
+          <map key='[Breakthrough Name]' value='[Sheet1].[Breakthrough Name]' />
+          <map key='[Entertainer (Sheet11)]' value='[Sheet11].[Entertainer]' />
+          <map key='[Entertainer (Sheet12)]' value='[Sheet12].[Entertainer]' />
+          <map key='[Entertainer (Sheet13)]' value='[Sheet13].[Entertainer]' />
+          <map key='[Entertainer]' value='[Sheet1].[Entertainer]' />
+          <map key='[Gender (traditional) (Sheet11)]' value='[Sheet11].[Gender (traditional)]' />
+          <map key='[Gender (traditional)]' value='[Sheet1].[Gender (traditional)]' />
+          <map key='[Year of Breakthrough/#1 Hit/Award Nomination (Sheet12)]' value='[Sheet12].[Year of Breakthrough/#1 Hit/Award Nomination]' />
+          <map key='[Year of Breakthrough/#1 Hit/Award Nomination]' value='[Sheet1].[Year of Breakthrough/#1 Hit/Award Nomination]' />
+          <map key='[Year of Death (Sheet13)]' value='[Sheet13].[Year of Death]' />
+          <map key='[Year of Death]' value='[Sheet1].[Year of Death]' />
+          <map key='[Year of First Oscar/Grammy/Emmy (Sheet12)]' value='[Sheet12].[Year of First Oscar/Grammy/Emmy]' />
+          <map key='[Year of First Oscar/Grammy/Emmy]' value='[Sheet1].[Year of First Oscar/Grammy/Emmy]' />
+          <map key='[Year of Last Major Work (arguable) (Sheet13)]' value='[Sheet13].[Year of Last Major Work (arguable)]' />
+          <map key='[Year of Last Major Work (arguable)]' value='[Sheet1].[Year of Last Major Work (arguable)]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H71:no:A1:H71:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C71:no:A1:C71:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet12]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D65:no:A1:D65:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet13]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C71:no:A1:C71:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entertainer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Entertainer]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Entertainer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender (traditional)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender (traditional)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gender (traditional)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birth Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Birth Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Birth Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Breakthrough/#1 Hit/Award Nomination</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Breakthrough/#1 Hit/Award Nomination]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year of Breakthrough/#1 Hit/Award Nomination</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breakthrough Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breakthrough Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Breakthrough Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of First Oscar/Grammy/Emmy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of First Oscar/Grammy/Emmy]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year of First Oscar/Grammy/Emmy</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Last Major Work (arguable)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Last Major Work (arguable)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year of Last Major Work (arguable)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Death</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Death]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year of Death</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entertainer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Entertainer (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Entertainer</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender (traditional)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender (traditional) (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Gender (traditional)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birth Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Birth Year (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Birth Year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entertainer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Entertainer (Sheet12)]</local-name>
+            <parent-name>[Sheet12]</parent-name>
+            <remote-alias>Entertainer</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Breakthrough/#1 Hit/Award Nomination</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Breakthrough/#1 Hit/Award Nomination (Sheet12)]</local-name>
+            <parent-name>[Sheet12]</parent-name>
+            <remote-alias>Year of Breakthrough/#1 Hit/Award Nomination</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breakthrough Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breakthrough Name (Sheet12)]</local-name>
+            <parent-name>[Sheet12]</parent-name>
+            <remote-alias>Breakthrough Name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of First Oscar/Grammy/Emmy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of First Oscar/Grammy/Emmy (Sheet12)]</local-name>
+            <parent-name>[Sheet12]</parent-name>
+            <remote-alias>Year of First Oscar/Grammy/Emmy</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entertainer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Entertainer (Sheet13)]</local-name>
+            <parent-name>[Sheet13]</parent-name>
+            <remote-alias>Entertainer</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Last Major Work (arguable)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Last Major Work (arguable) (Sheet13)]</local-name>
+            <parent-name>[Sheet13]</parent-name>
+            <remote-alias>Year of Last Major Work (arguable)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Death</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Death (Sheet13)]</local-name>
+            <parent-name>[Sheet13]</parent-name>
+            <remote-alias>Year of Death</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Birth Year (Sheet11)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Birth Year]' role='dimension' type='quantitative' />
+      <column caption='Breakthrough Name1' datatype='string' name='[Breakthrough Name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Entertainer (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Entertainer]' default='&quot;Males&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Females&quot;'>
+            <value>&quot;Adele&quot;</value>
+            <value>&quot;Angelina Jolie&quot;</value>
+            <value>&quot;Aretha Franklin&quot;</value>
+            <value>&quot;Bette Davis&quot;</value>
+            <value>&quot;Betty White&quot;</value>
+            <value>&quot;Carol Burnett&quot;</value>
+            <value>&quot;Carole Lombard&quot;</value>
+            <value>&quot;Carrie Fisher&quot;</value>
+            <value>&quot;Clara Bow&quot;</value>
+            <value>&quot;Debbie Reynolds&quot;</value>
+            <value>&quot;Greta Garbo&quot;</value>
+            <value>&quot;Jennifer Aniston&quot;</value>
+            <value>&quot;Joan Crawford&quot;</value>
+            <value>&quot;Katherine Hepburn&quot;</value>
+            <value>&quot;Lady Gaga&quot;</value>
+            <value>&quot;Madonna&quot;</value>
+            <value>&quot;Mariah Carey&quot;</value>
+            <value>&quot;Mary Tyler Moore&quot;</value>
+            <value>&quot;Meryl Streep&quot;</value>
+            <value>&quot;Oprah Winfrey&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Entertainer1' datatype='string' name='[Entertainer]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender (traditional) (Sheet11)]' role='dimension' type='nominal' />
+      <column caption='Gender (traditional)1' datatype='string' name='[Gender (traditional)]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year of Breakthrough/#1 Hit/Award Nomination]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year of Death]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year of First Oscar/Grammy/Emmy (Sheet12)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year of First Oscar/Grammy/Emmy]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year of Last Major Work (arguable)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet12' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet11' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_AA045EBC6D974DC79F7F31D58247D590]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet111' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet13' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_B5E778069AEF4EC788B3F98188F0F5D2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet131' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year of First Oscar/Grammy/Emmy (Sheet12)]' derivation='Attribute' name='[attr:Year of First Oscar/Grammy/Emmy (Sheet12):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Gender (traditional) (Sheet11)]' derivation='None' name='[none:Gender (traditional) (Sheet11):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender (traditional)]' derivation='None' name='[none:Gender (traditional):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Birth Year]' derivation='Sum' name='[sum:Birth Year:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year of Breakthrough/#1 Hit/Award Nomination]' derivation='Sum' name='[sum:Year of Breakthrough/#1 Hit/Award Nomination:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year of Death]' derivation='Sum' name='[sum:Year of Death:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year of First Oscar/Grammy/Emmy (Sheet12)]' derivation='Sum' name='[sum:Year of First Oscar/Grammy/Emmy (Sheet12):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year of First Oscar/Grammy/Emmy]' derivation='Sum' name='[sum:Year of First Oscar/Grammy/Emmy:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year of Last Major Work (arguable)]' derivation='Sum' name='[sum:Year of Last Major Work (arguable):qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/hrida/AppData/Local/Temp/TableauTemp/#TableauTemp_1vz4bwx11q4iqz17vifaq10t2tnj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/04/2024 09:30:46 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC' table='[Extract].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Sheet1_AA045EBC6D974DC79F7F31D58247D590' table='[Extract].[Sheet1_AA045EBC6D974DC79F7F31D58247D590]' type='table' />
+            <relation name='Sheet1_AD3BAFB20E90428ABEA408BB56D1756E' table='[Extract].[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]' type='table' />
+            <relation name='Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC' table='[Extract].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' type='table' />
+            <relation name='Sheet1_FE35FF6BFEB446649459AA8E776F45D1' table='[Extract].[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Birth Year (Sheet11)]' value='[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E].[Birth Year]' />
+            <map key='[Birth Year]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Birth Year]' />
+            <map key='[Breakthrough Name (Sheet12)]' value='[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC].[Breakthrough Name]' />
+            <map key='[Breakthrough Name]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Breakthrough Name]' />
+            <map key='[Entertainer (Sheet11)]' value='[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E].[Entertainer]' />
+            <map key='[Entertainer (Sheet12)]' value='[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC].[Entertainer]' />
+            <map key='[Entertainer (Sheet13)]' value='[Sheet1_FE35FF6BFEB446649459AA8E776F45D1].[Entertainer]' />
+            <map key='[Entertainer]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Entertainer]' />
+            <map key='[Gender (traditional) (Sheet11)]' value='[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E].[Gender (traditional)]' />
+            <map key='[Gender (traditional)]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Gender (traditional)]' />
+            <map key='[Year of Breakthrough/#1 Hit/Award Nomination (Sheet12)]' value='[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC].[Year of Breakthrough/#1 Hit/Award Nomination]' />
+            <map key='[Year of Breakthrough/#1 Hit/Award Nomination]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Year of Breakthrough/#1 Hit/Award Nomination]' />
+            <map key='[Year of Death (Sheet13)]' value='[Sheet1_FE35FF6BFEB446649459AA8E776F45D1].[Year of Death]' />
+            <map key='[Year of Death]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Year of Death]' />
+            <map key='[Year of First Oscar/Grammy/Emmy (Sheet12)]' value='[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC].[Year of First Oscar/Grammy/Emmy]' />
+            <map key='[Year of First Oscar/Grammy/Emmy]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Year of First Oscar/Grammy/Emmy]' />
+            <map key='[Year of Last Major Work (arguable) (Sheet13)]' value='[Sheet1_FE35FF6BFEB446649459AA8E776F45D1].[Year of Last Major Work (arguable)]' />
+            <map key='[Year of Last Major Work (arguable)]' value='[Sheet1_AA045EBC6D974DC79F7F31D58247D590].[Year of Last Major Work (arguable)]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Entertainer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entertainer]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Entertainer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender (traditional)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender (traditional)]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Gender (traditional)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Birth Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Birth Year]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Birth Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Breakthrough/#1 Hit/Award Nomination</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Breakthrough/#1 Hit/Award Nomination]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Year of Breakthrough/#1 Hit/Award Nomination</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Breakthrough Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Breakthrough Name]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Breakthrough Name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of First Oscar/Grammy/Emmy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of First Oscar/Grammy/Emmy]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Year of First Oscar/Grammy/Emmy</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Last Major Work (arguable)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Last Major Work (arguable)]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Year of Last Major Work (arguable)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Death</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Death]</local-name>
+              <parent-name>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</parent-name>
+              <remote-alias>Year of Death</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AA045EBC6D974DC79F7F31D58247D590]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entertainer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entertainer (Sheet11)]</local-name>
+              <parent-name>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</parent-name>
+              <remote-alias>Entertainer</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet11</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender (traditional)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender (traditional) (Sheet11)]</local-name>
+              <parent-name>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</parent-name>
+              <remote-alias>Gender (traditional)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet11</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Birth Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Birth Year (Sheet11)]</local-name>
+              <parent-name>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</parent-name>
+              <remote-alias>Birth Year</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet11</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entertainer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entertainer (Sheet12)]</local-name>
+              <parent-name>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</parent-name>
+              <remote-alias>Entertainer</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet12</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Breakthrough/#1 Hit/Award Nomination</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Breakthrough/#1 Hit/Award Nomination (Sheet12)]</local-name>
+              <parent-name>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</parent-name>
+              <remote-alias>Year of Breakthrough/#1 Hit/Award Nomination</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet12</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Breakthrough Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Breakthrough Name (Sheet12)]</local-name>
+              <parent-name>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</parent-name>
+              <remote-alias>Breakthrough Name</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet12</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of First Oscar/Grammy/Emmy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of First Oscar/Grammy/Emmy (Sheet12)]</local-name>
+              <parent-name>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</parent-name>
+              <remote-alias>Year of First Oscar/Grammy/Emmy</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet12</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entertainer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entertainer (Sheet13)]</local-name>
+              <parent-name>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</parent-name>
+              <remote-alias>Entertainer</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet13</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Last Major Work (arguable)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Last Major Work (arguable) (Sheet13)]</local-name>
+              <parent-name>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</parent-name>
+              <remote-alias>Year of Last Major Work (arguable)</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet13</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Death</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Death (Sheet13)]</local-name>
+              <parent-name>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</parent-name>
+              <remote-alias>Year of Death</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet13</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender (traditional) (Sheet11):nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Entertainer (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Females&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Males&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Death:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Breakthrough/\#1 Hit/Award Nomination:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Birth Year:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_D0AA63E9E7524329875A9EDC3408896C:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_129AC18CDD104649825B99E5809E7BB5:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional):nk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[attr:Year of First Oscar/Grammy/Emmy (Sheet12):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of First Oscar/Grammy/Emmy (Sheet12):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of First Oscar/Grammy/Emmy:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Last Major Work (arguable):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_02D27D725B284A1194E49BD36D903606:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet12' id='Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC'>
+            <properties context=''>
+              <relation connection='excel-direct.0qep6zd1fxf7nn18g8nex1ocqrxn' name='Sheet12' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D65:no:A1:D65:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Entertainer' ordinal='0' />
+                  <column datatype='integer' name='Year of Breakthrough/#1 Hit/Award Nomination' ordinal='1' />
+                  <column datatype='string' name='Breakthrough Name' ordinal='2' />
+                  <column datatype='integer' name='Year of First Oscar/Grammy/Emmy' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC' table='[Extract].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' type='table' />
+            </properties>
+          </object>
+          <object caption='Sheet11' id='Sheet1_AA045EBC6D974DC79F7F31D58247D590'>
+            <properties context=''>
+              <relation connection='excel-direct.17zble11yie8hu19rpmhj0boe6i4' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H71:no:A1:H71:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Entertainer' ordinal='0' />
+                  <column datatype='string' name='Gender (traditional)' ordinal='1' />
+                  <column datatype='integer' name='Birth Year' ordinal='2' />
+                  <column datatype='integer' name='Year of Breakthrough/#1 Hit/Award Nomination' ordinal='3' />
+                  <column datatype='string' name='Breakthrough Name' ordinal='4' />
+                  <column datatype='integer' name='Year of First Oscar/Grammy/Emmy' ordinal='5' />
+                  <column datatype='integer' name='Year of Last Major Work (arguable)' ordinal='6' />
+                  <column datatype='integer' name='Year of Death' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sheet1_AA045EBC6D974DC79F7F31D58247D590' table='[Extract].[Sheet1_AA045EBC6D974DC79F7F31D58247D590]' type='table' />
+            </properties>
+          </object>
+          <object caption='Sheet111' id='Sheet1_AD3BAFB20E90428ABEA408BB56D1756E'>
+            <properties context=''>
+              <relation connection='excel-direct.1l89o8z0d2uht013cxlq71d7s9k8' name='Sheet11' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C71:no:A1:C71:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Entertainer' ordinal='0' />
+                  <column datatype='string' name='Gender (traditional)' ordinal='1' />
+                  <column datatype='integer' name='Birth Year' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sheet1_AD3BAFB20E90428ABEA408BB56D1756E' table='[Extract].[Sheet1_AD3BAFB20E90428ABEA408BB56D1756E]' type='table' />
+            </properties>
+          </object>
+          <object caption='Sheet131' id='Sheet1_FE35FF6BFEB446649459AA8E776F45D1'>
+            <properties context=''>
+              <relation connection='excel-direct.14y7a5r1rkhchv141jsag143d65d' name='Sheet13' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C71:no:A1:C71:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Entertainer' ordinal='0' />
+                  <column datatype='integer' name='Year of Last Major Work (arguable)' ordinal='1' />
+                  <column datatype='integer' name='Year of Death' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sheet1_FE35FF6BFEB446649459AA8E776F45D1' table='[Extract].[Sheet1_FE35FF6BFEB446649459AA8E776F45D1]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Entertainer (Sheet11)]' />
+              <expression op='[Entertainer (Sheet12)]' />
+            </expression>
+            <first-end-point object-id='Sheet1_AD3BAFB20E90428ABEA408BB56D1756E' />
+            <second-end-point object-id='Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Birth Year]' />
+                <expression op='[Birth Year (Sheet11)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Gender (traditional)]' />
+                <expression op='[Gender (traditional) (Sheet11)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Entertainer]' />
+                <expression op='[Entertainer (Sheet11)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='Sheet1_AA045EBC6D974DC79F7F31D58247D590' />
+            <second-end-point object-id='Sheet1_AD3BAFB20E90428ABEA408BB56D1756E' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Entertainer (Sheet11)]' />
+              <expression op='[Entertainer (Sheet13)]' />
+            </expression>
+            <first-end-point object-id='Sheet1_AD3BAFB20E90428ABEA408BB56D1756E' />
+            <second-end-point object-id='Sheet1_FE35FF6BFEB446649459AA8E776F45D1' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_40A5C5A0D81143CB91A18C1C7114577C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Entertainer' />
+        <param name='target' value='Sheet 3' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_469CDB3843AB451E88D15B84476F5EBE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Entertainers&apos; Details</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Entertainer - Basic Info)' name='federated.056i81216eq4cg103jggh0t4tuzc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056i81216eq4cg103jggh0t4tuzc'>
+            <column datatype='string' name='[Entertainer (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Entertainer]' default='&quot;Males&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Females&quot;'>
+                  <value>&quot;Adele&quot;</value>
+                  <value>&quot;Angelina Jolie&quot;</value>
+                  <value>&quot;Aretha Franklin&quot;</value>
+                  <value>&quot;Bette Davis&quot;</value>
+                  <value>&quot;Betty White&quot;</value>
+                  <value>&quot;Carol Burnett&quot;</value>
+                  <value>&quot;Carole Lombard&quot;</value>
+                  <value>&quot;Carrie Fisher&quot;</value>
+                  <value>&quot;Clara Bow&quot;</value>
+                  <value>&quot;Debbie Reynolds&quot;</value>
+                  <value>&quot;Greta Garbo&quot;</value>
+                  <value>&quot;Jennifer Aniston&quot;</value>
+                  <value>&quot;Joan Crawford&quot;</value>
+                  <value>&quot;Katherine Hepburn&quot;</value>
+                  <value>&quot;Lady Gaga&quot;</value>
+                  <value>&quot;Madonna&quot;</value>
+                  <value>&quot;Mariah Carey&quot;</value>
+                  <value>&quot;Mary Tyler Moore&quot;</value>
+                  <value>&quot;Meryl Streep&quot;</value>
+                  <value>&quot;Oprah Winfrey&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet11' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_AA045EBC6D974DC79F7F31D58247D590]' role='measure' type='quantitative' />
+            <column caption='Entertainer1' datatype='string' name='[Entertainer]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet11' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_AA045EBC6D974DC79F7F31D58247D590]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_AA045EBC6D974DC79F7F31D58247D590]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_AA045EBC6D974DC79F7F31D58247D590:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Females&quot;</bucket>
+              <bucket>&quot;Males&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' />
+              <wedge-size column='[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_AA045EBC6D974DC79F7F31D58247D590:qk]' />
+              <text column='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' />
+              <text column='[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_AA045EBC6D974DC79F7F31D58247D590:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.087458610534668' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8DA4809B-A4AC-4504-BFC9-E1716CC3D453}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Entertainer - Basic Info)' name='federated.056i81216eq4cg103jggh0t4tuzc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056i81216eq4cg103jggh0t4tuzc'>
+            <column datatype='integer' name='[Birth Year]' role='dimension' type='quantitative' />
+            <column caption='Breakthrough Name1' datatype='string' name='[Breakthrough Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Entertainer (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Entertainer]' default='&quot;Males&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Females&quot;'>
+                  <value>&quot;Adele&quot;</value>
+                  <value>&quot;Angelina Jolie&quot;</value>
+                  <value>&quot;Aretha Franklin&quot;</value>
+                  <value>&quot;Bette Davis&quot;</value>
+                  <value>&quot;Betty White&quot;</value>
+                  <value>&quot;Carol Burnett&quot;</value>
+                  <value>&quot;Carole Lombard&quot;</value>
+                  <value>&quot;Carrie Fisher&quot;</value>
+                  <value>&quot;Clara Bow&quot;</value>
+                  <value>&quot;Debbie Reynolds&quot;</value>
+                  <value>&quot;Greta Garbo&quot;</value>
+                  <value>&quot;Jennifer Aniston&quot;</value>
+                  <value>&quot;Joan Crawford&quot;</value>
+                  <value>&quot;Katherine Hepburn&quot;</value>
+                  <value>&quot;Lady Gaga&quot;</value>
+                  <value>&quot;Madonna&quot;</value>
+                  <value>&quot;Mariah Carey&quot;</value>
+                  <value>&quot;Mary Tyler Moore&quot;</value>
+                  <value>&quot;Meryl Streep&quot;</value>
+                  <value>&quot;Oprah Winfrey&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Entertainer1' datatype='string' name='[Entertainer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year of Breakthrough/#1 Hit/Award Nomination]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year of Death]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year of First Oscar/Grammy/Emmy]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year of Last Major Work (arguable)]' role='measure' type='quantitative' />
+            <column-instance column='[Breakthrough Name]' derivation='None' name='[none:Breakthrough Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Entertainer]' derivation='None' name='[none:Entertainer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Birth Year]' derivation='Sum' name='[sum:Birth Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of Breakthrough/#1 Hit/Award Nomination]' derivation='Sum' name='[sum:Year of Breakthrough/#1 Hit/Award Nomination:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of Death]' derivation='Sum' name='[sum:Year of Death:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of First Oscar/Grammy/Emmy]' derivation='Sum' name='[sum:Year of First Oscar/Grammy/Emmy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of Last Major Work (arguable)]' derivation='Sum' name='[sum:Year of Last Major Work (arguable):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Breakthrough/\#1 Hit/Award Nomination:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of First Oscar/Grammy/Emmy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Last Major Work (arguable):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Death:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Birth Year:qk]&quot;</bucket>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Breakthrough/\#1 Hit/Award Nomination:qk]&quot;</bucket>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of First Oscar/Grammy/Emmy:qk]&quot;</bucket>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Last Major Work (arguable):qk]&quot;</bucket>
+              <bucket>&quot;[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Death:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]'>
+            <groupfilter function='member' level='[Entertainer (group)]' member='&quot;Males&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]'>
+            <groupfilter function='member' level='[none:Entertainer:nk]' member='&quot;Bing Crosby&quot;' user:ui-domain='context' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]</column>
+            <column>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]</column>
+            <column>[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.056i81216eq4cg103jggh0t4tuzc].[Multiple Values]' field-type='quantitative' max='2025.0' min='1910.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.056i81216eq4cg103jggh0t4tuzc].[Multiple Values]' scope='rows' value='Year' />
+            <format attr='height' field='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' value='37' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk]' value='29' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk]' value='true' />
+            <format attr='font-weight' field='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' value='bold' />
+            <format attr='color' field='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' value='#1b1b1b' />
+            <format attr='text-decoration' field='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' value='none' />
+            <format attr='font-style' field='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' value='normal' />
+            <format attr='font-size' field='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' value='9' />
+            <format attr='font-weight' field='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk]' value='normal' />
+            <format attr='font-family' field='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk]' value='Tableau Medium' />
+            <format attr='font-size' field='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk]' value='11' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='2' />
+            <format attr='stroke-color' scope='cols' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' value='Entertainer Gender'>
+              <formatted-text>
+                <run>Entertainer Gender</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]' />
+              <tooltip column='[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Birth Year:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Birth Year: </run>
+                <run fontcolor='#000000'><![CDATA[<[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Birth Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.056i81216eq4cg103jggh0t4tuzc].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.44977900385856628' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.056i81216eq4cg103jggh0t4tuzc].[Multiple Values]</rows>
+        <cols>([federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk] / [federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names])</cols>
+        <page-trail-options enabled='true' />
+      </table>
+      <simple-id uuid='{567C088B-FCC4-489F-98A8-5F9BF9CEA52D}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Awardee Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Entertainer - Basic Info)' name='federated.056i81216eq4cg103jggh0t4tuzc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056i81216eq4cg103jggh0t4tuzc'>
+            <column datatype='string' name='[Entertainer (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Entertainer]' default='&quot;Males&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Females&quot;'>
+                  <value>&quot;Adele&quot;</value>
+                  <value>&quot;Angelina Jolie&quot;</value>
+                  <value>&quot;Aretha Franklin&quot;</value>
+                  <value>&quot;Bette Davis&quot;</value>
+                  <value>&quot;Betty White&quot;</value>
+                  <value>&quot;Carol Burnett&quot;</value>
+                  <value>&quot;Carole Lombard&quot;</value>
+                  <value>&quot;Carrie Fisher&quot;</value>
+                  <value>&quot;Clara Bow&quot;</value>
+                  <value>&quot;Debbie Reynolds&quot;</value>
+                  <value>&quot;Greta Garbo&quot;</value>
+                  <value>&quot;Jennifer Aniston&quot;</value>
+                  <value>&quot;Joan Crawford&quot;</value>
+                  <value>&quot;Katherine Hepburn&quot;</value>
+                  <value>&quot;Lady Gaga&quot;</value>
+                  <value>&quot;Madonna&quot;</value>
+                  <value>&quot;Mariah Carey&quot;</value>
+                  <value>&quot;Mary Tyler Moore&quot;</value>
+                  <value>&quot;Meryl Streep&quot;</value>
+                  <value>&quot;Oprah Winfrey&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Entertainer1' datatype='string' name='[Entertainer]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Sheet12' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' role='measure' type='quantitative' />
+            <column caption='Gender (traditional)1' datatype='string' name='[Gender (traditional)]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Sheet12' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender (traditional)]' derivation='None' name='[none:Gender (traditional):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional):nk]' />
+              <wedge-size column='[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC:qk]' />
+              <text column='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' />
+              <text column='[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{89852C33-BF16-47E2-868C-2E6B7D2C4F97}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Entertainer - Basic Info)' name='federated.056i81216eq4cg103jggh0t4tuzc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.056i81216eq4cg103jggh0t4tuzc'>
+            <column caption='Breakthrough Name1' datatype='string' name='[Breakthrough Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Entertainer (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Entertainer]' default='&quot;Males&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Females&quot;'>
+                  <value>&quot;Adele&quot;</value>
+                  <value>&quot;Angelina Jolie&quot;</value>
+                  <value>&quot;Aretha Franklin&quot;</value>
+                  <value>&quot;Bette Davis&quot;</value>
+                  <value>&quot;Betty White&quot;</value>
+                  <value>&quot;Carol Burnett&quot;</value>
+                  <value>&quot;Carole Lombard&quot;</value>
+                  <value>&quot;Carrie Fisher&quot;</value>
+                  <value>&quot;Clara Bow&quot;</value>
+                  <value>&quot;Debbie Reynolds&quot;</value>
+                  <value>&quot;Greta Garbo&quot;</value>
+                  <value>&quot;Jennifer Aniston&quot;</value>
+                  <value>&quot;Joan Crawford&quot;</value>
+                  <value>&quot;Katherine Hepburn&quot;</value>
+                  <value>&quot;Lady Gaga&quot;</value>
+                  <value>&quot;Madonna&quot;</value>
+                  <value>&quot;Mariah Carey&quot;</value>
+                  <value>&quot;Mary Tyler Moore&quot;</value>
+                  <value>&quot;Meryl Streep&quot;</value>
+                  <value>&quot;Oprah Winfrey&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Entertainer1' datatype='string' name='[Entertainer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender (traditional) (Sheet11)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year of Breakthrough/#1 Hit/Award Nomination (Sheet12)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year of First Oscar/Grammy/Emmy (Sheet12)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year of First Oscar/Grammy/Emmy]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year of Last Major Work (arguable) (Sheet13)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year of Last Major Work (arguable)]' role='measure' type='quantitative' />
+            <column-instance column='[Breakthrough Name]' derivation='None' name='[none:Breakthrough Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Entertainer]' derivation='None' name='[none:Entertainer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender (traditional) (Sheet11)]' derivation='None' name='[none:Gender (traditional) (Sheet11):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Breakthrough/#1 Hit/Award Nomination (Sheet12)]' derivation='Sum' name='[sum:Year of Breakthrough/#1 Hit/Award Nomination (Sheet12):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of First Oscar/Grammy/Emmy (Sheet12)]' derivation='Sum' name='[sum:Year of First Oscar/Grammy/Emmy (Sheet12):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of First Oscar/Grammy/Emmy]' derivation='Sum' name='[sum:Year of First Oscar/Grammy/Emmy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of Last Major Work (arguable) (Sheet13)]' derivation='Sum' name='[sum:Year of Last Major Work (arguable) (Sheet13):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year of Last Major Work (arguable)]' derivation='Sum' name='[sum:Year of Last Major Work (arguable):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]'>
+            <groupfilter function='member' level='[Entertainer (group)]' member='&quot;Males&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]'>
+            <groupfilter function='member' level='[none:Entertainer:nk]' member='&quot;Bing Crosby&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]</column>
+            <column>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#898989' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional) (Sheet11):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Last Major Work (arguable):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional) (Sheet11):nk]' />
+              <text column='[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Last Major Work (arguable) (Sheet13):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Breakthrough/#1 Hit/Award Nomination (Sheet12):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional) (Sheet11):nk]' />
+              <text column='[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Breakthrough/#1 Hit/Award Nomination (Sheet12):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of First Oscar/Grammy/Emmy (Sheet12):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional) (Sheet11):nk]' />
+              <text column='[federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of First Oscar/Grammy/Emmy:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk] * ([federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Last Major Work (arguable):qk] + ([federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of Breakthrough/#1 Hit/Award Nomination (Sheet12):qk] + [federated.056i81216eq4cg103jggh0t4tuzc].[sum:Year of First Oscar/Grammy/Emmy (Sheet12):qk])))</cols>
+      </table>
+      <simple-id uuid='{4EB5BAD9-5155-4A51-AB27-5B0F8CC56B29}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1220' minheight='860' minwidth='1220' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Sheet1 (Entertainer - Basic Info)' name='federated.056i81216eq4cg103jggh0t4tuzc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.056i81216eq4cg103jggh0t4tuzc'>
+        <column datatype='string' name='[Entertainer (group)]' role='dimension' type='nominal'>
+          <calculation class='categorical-bin' column='[Entertainer]' default='&quot;Males&quot;' new-bin='true'>
+            <bin default-name='false' value='&quot;Females&quot;'>
+              <value>&quot;Adele&quot;</value>
+              <value>&quot;Angelina Jolie&quot;</value>
+              <value>&quot;Aretha Franklin&quot;</value>
+              <value>&quot;Bette Davis&quot;</value>
+              <value>&quot;Betty White&quot;</value>
+              <value>&quot;Carol Burnett&quot;</value>
+              <value>&quot;Carole Lombard&quot;</value>
+              <value>&quot;Carrie Fisher&quot;</value>
+              <value>&quot;Clara Bow&quot;</value>
+              <value>&quot;Debbie Reynolds&quot;</value>
+              <value>&quot;Greta Garbo&quot;</value>
+              <value>&quot;Jennifer Aniston&quot;</value>
+              <value>&quot;Joan Crawford&quot;</value>
+              <value>&quot;Katherine Hepburn&quot;</value>
+              <value>&quot;Lady Gaga&quot;</value>
+              <value>&quot;Madonna&quot;</value>
+              <value>&quot;Mariah Carey&quot;</value>
+              <value>&quot;Mary Tyler Moore&quot;</value>
+              <value>&quot;Meryl Streep&quot;</value>
+              <value>&quot;Oprah Winfrey&quot;</value>
+            </bin>
+          </calculation>
+        </column>
+        <column caption='Entertainer1' datatype='string' name='[Entertainer]' role='dimension' type='nominal' />
+        <column-instance column='[Entertainer]' derivation='None' name='[none:Entertainer:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='15' param='vert' type-v2='layout-flow' w='98688' x='656' y='930'>
+            <zone h='98140' id='7' param='horz' type-v2='layout-flow' w='98688' x='656' y='930'>
+              <zone h='98140' id='5' type-v2='layout-basic' w='98688' x='656' y='930'>
+                <zone h='49068' id='3' name='Sheet 2' w='98688' x='656' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49072' id='10' name='Sheet 3' w='49350' x='49994' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49072' id='12' name='Sheet 1' w='49338' x='656' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8023' id='13' name='Sheet 1' pane-specification-id='0' param='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' type-v2='color' w='12049' x='42705' y='84767' />
+        <zone fixed-size='271' h='6512' id='9' is-fixed='true' mode='dropdown' name='Sheet 2' param='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]' show-all='false' type-v2='filter' values='relevant' w='13115' x='86066' y='1744' />
+        <zone h='8605' id='8' mode='radiolist' name='Sheet 2' param='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' show-all='false' show-morefewerbutton='true' type-v2='filter' values='all' w='13770' x='71967' y='233' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='16' param='vert' type-v2='layout-flow' w='98688' x='656' y='930'>
+                <zone fixed-size='271' h='6512' id='9' mode='dropdown' name='Sheet 2' param='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]' show-all='false' type-v2='filter' values='relevant' w='13115' x='86066' y='1744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8605' id='8' mode='dropdown' name='Sheet 2' param='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' show-all='false' show-morefewerbutton='true' type-v2='filter' values='all' w='13770' x='71967' y='233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49068' id='3' is-fixed='true' name='Sheet 2' w='98688' x='656' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49072' id='12' is-fixed='true' name='Sheet 1' w='49338' x='656' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8023' id='13' name='Sheet 1' pane-specification-id='0' param='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' type-v2='color' w='12049' x='42705' y='84767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49072' id='10' is-fixed='true' name='Sheet 3' w='49350' x='49994' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DBD4DA18-B46A-4D07-BA85-8E8C34D61A33}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional):nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{29E6E4C4-AADD-4615-89B5-D35EA8BE473A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' show-all='false' show-morefewerbutton='true' type='filter' />
+            <card mode='radiolist' param='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]' show-all='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[:Measure Names]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Birth Year:qk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{329160DE-7E43-4F8B-B345-30F85DD55C22}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[__tableau_internal_object_id__].[cnt:Sheet1_85CB2EFA45BF422C8E9061E7075DC7CC:qk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2B6A0CCD-B94C-43DE-A950-B3F092158651}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{EF80FCC9-33B1-46D1-B975-989C5CC6BAC9}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]' show-all='false' show-morefewerbutton='true' show-search='false' show-step-btns='false' type='filter' />
+            <card mode='radiolist' param='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]' type='filter' values='relevant' />
+            <card pane-specification-id='7' param='[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional) (Sheet11):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[Entertainer (group)]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Birth Year:qk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Breakthrough Name:nk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Entertainer:nk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional) (Sheet11):nk]</field>
+            <field>[federated.056i81216eq4cg103jggh0t4tuzc].[none:Gender (traditional):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FA611934-EBAA-4131-9B63-13DFEBFD05DD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      O39aAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      2MsWWVhYoF7+9uP19YeZmRjBMHSaBlydjpKIxwhMXkGzWt9an95J4O3poVVM4Ru9RLfTYCdb
+      YmHhBtXCwbfWb25tYdsGzcNdesev4NF00ocVbiwsUM5/47lm6nRMG11vP9tzrZSjZWpcmQyS
+      KjafLe3pj+B1WjSPSvSGJ+jTTJK5MleuL5DbSRIcnqbH1mkDmsNFNNyPYcHg6BSDIT/1avHr
+      AVimia63sX+kq6MTcxe5NDdJ6iCL0W7R6Ri4NWjrOpZln+gsp8uN88vfFKZpoDebOD1eOnqH
+      tmHgwqKj6xjWyc30eDwAaK4ubtx4BUe9ShsTXdcxbA3D1NE7bbQT+FBstWusbKa5fPkCtmmg
+      d9rg9KAbbVqmgcdh0+noGOYXD9BpW3QMHes7Hu9RKUsy32R+bgrTMGm1O3i8XvRWC9Mwv7Ha
+      5DBfopDNkK8c0Wk1MAwDp23TMTpY1rdf2Xy9IS7NjpAp1Ok0mxiGgfZ0P/bX13caVfzhUXo8
+      DkzDeLbnp/tyu756bj493g6Hk47eofPledV1HRuLTueL2xyAw+XG9eXbo8zuJmZXlMnh4Nef
+      6ZNjQ2zEk0xNTRz3fDyXajFHbCvN7MXr+LU6pjfA1YvTbMViDI9NnuisRqVAqXJEci/N6FCY
+      2G6ZS1cu4NLLeIIRZibH2Y5vMDY5dUITbdI7mzQbTXKFMjubMZyhCOcmJ9iKbzA2Mcdg2Md+
+      xWQ40vuDpzWPGmDpbO3sMTE2SCxxwOzsLH1dBvT0Mz09TWYzxtD4F8d1emaK+FqMkfFvH+ej
+      ZhuzWSGZyTEcDbBXNpidPY9WT9EfHvzGaicLr73Oy6++zuTsJbrbWbx9Uc7NjhNf++7jOTMx
+      zPpunnPz1/G09vEFBpidHmNjbYPxqemvrfX0DeLpFHD5Asyfnya+FmN0YoqhcD+pGowGn769
+      sknvJmg2mlTaTtxmFXcgwszkBNvxGHPXrqK1inhDUTxAs1okV6qT2kvSbncoZlPUOm40+8sL
+      s+Vy+VQvg4rTI+f2+8k3wUJpEoBQmgQglHYqAdhmi/sPl6nndoinis/9cyuLd9hK52iVMqzt
+      ZL9zTadRpVj74tJYKvaYT5c2sFol/vc77/3pKu7effSdP5+Mr5Cvt/nog1t02mWW1ne/tWb5
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
